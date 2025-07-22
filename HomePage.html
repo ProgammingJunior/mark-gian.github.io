@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">    
+<script>
+    alert("Hello welcome to The Toyota Home Page");
+</script>
+<style>
+
+    a{
+        text-decoration: none;
+        color:black;
+    }
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: white;
+
+    }
+   header{
+    position-anchor: top;
+    position: sticky;   
+   }
+
+   .alignHeader{
+    text-align: center;
+    border-left: 1px solid black;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 100%;
+   }
+
+
+   #Cover{
+    background-color: rgba(200,0,0,0.5);
+    z-index: 1;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+   }
+   .ToyotaContent{
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    color:white;
+    top: 50%;
+    left: 50%;
+    height:auto;
+    width: auto;
+
+
+   }
+   #backgroundVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+   }
+
+   .ImagesTemplate {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    transition: background-color 0.5s ease;
+
+   }
+   .ImagesTemplate:hover{
+    background-color: rgba(0,0,0,0);
+   }
+
+
+   .ServiceImageStyle {
+    width: 220px;
+    height: 100px;
+    position: relative;
+   
+   }
+
+   .ServiceImagePadding {
+    padding-right: 2px;
+    padding-left: 2px;
+   }
+
+   .Vehiclebutton {
+   
+      box-shadow: 0 0 0 2px black;
+      background-color: white;
+      color: black;
+      font-size: 16px;
+      transition: background-color 0.5s ease;
+      text-align: center;
+    
+      width: 100%;
+        height: 100%;
+    }
+
+    .Vehiclebutton:hover {
+      background-color: black;
+      color:white;
+    }
+
+    .HeaderTemplate{
+        box-shadow: 0 0 0 3px black;
+        background-color: lightgray;
+        color: black;
+        transition: background-color 0.5s ease;
+        text-align: center;
+                font-size: 16px;
+                height: 5vh;
+               width:15vh; 
+    }
+
+    .HeaderTemplate:hover{
+        background-color: rgba(173, 216, 230, 0.3);
+    }
+
+    #VehicleSelection {
+
+        overflow-x: scroll;
+    
+        background-color: white;
+
+
+
+    }
+
+
+
+    .VehicleSelectionTemplate{
+        height: 150px;
+        width: 150px;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size:120%;
+
+
+     
+    }
+    
+    .VehicleSelect{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    transition: background-color 0.5s ease;
+    }
+    .VehicleSelect:hover{
+         background-color: rgba(246, 200, 94, 0.3);
+    }
+
+
+
+
+
+    .footer{
+
+        background-color: lighgray;
+    }
+
+    .footerContent{
+        padding-right: 5vh;
+        padding-bottom: 2vh;
+    }
+
+    .adjust{
+        overflow-x:auto;
+        overflow-y: hidden;
+    }
+
+
+</style>
+
+<head>
+
+    <!-- Website Logo and title-->
+  <title>Automotive Dealership | Toyota Bacoor Cavite Inc. | Calabarzon</title>
+  <link rel ="icon" href="https://media.glassdoor.com/sqll/2887151/toyota-bacoor-cavite-squarelogo-1570513179399.png">
+  
+</head>
+
+<header>
+
+    <div style="top:0; padding-left: 7vh; width: 100%;" class="adjust">
+    <!-- Header contact information-->
+  <table style="background-color: lightgray; margin-left: 1%; margin-right: 1%;">
+    <tr style="height: 5px; "></tr>
+        <td class="alignHeader" style="border-left: 0px;">MAIN: <a href="tel:0464198331">(046) 419 8331</td>
+        <td class="alignHeader">Vehicle Sales: <a href="tel:0464198333">(046) 419 8333</td>
+        <td class="alignHeader">PARTS & SERVICES: <a href="tel:0464898000   "> (046) 489 8000 </td>
+        <td class="alignHeader"><a href="https://www.toyotabacoor.com/mytoyota">SCHEDULE SERVICE</a></td>
+        <td class="alignHeader"><a href="https://goo.gl/maps/CvTaXAB7fuU54kRm6">BACOOR BOULEVARD, MAMBOG IV, BACOOR,CAVITE,4102</td>
+    </tr> 
+  </table>
+
+  </div>
+
+<div style="width:100%;" class="adjust ">
+<table style="margin-left: 10%; margin-right: 10%;">
+    <tr>
+        <td>
+
+            <a href="HomePage.html">
+            <img src="https://static.wixstatic.com/media/34ad47_f093f103b79a4b3fbd001aaffecb5aa8~mv2.png/v1/crop/x_0,y_0,w_2949,h_568/fill/w_426,h_82,al_c,q_95,usm_0.66_1.00_0.01,enc_avif,quality_auto/Bacoor%2C%20Cavite_edited.png" width="185px" height="40px">
+        </td>
+
+        <td>
+            <div style="padding-left: 5vh; padding-right: 5vh">
+            <table>
+                 <tr>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="https://www.toyotabacoor.com/about-4-1">
+                         <div style="color:black">Environment Policy</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="https://www.toyotabacoor.com/vehicles">
+                        <div style="color: black">Vehicles</div>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="ServicePage.html">     
+                        <div style="color:black;">Service</div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="https://www.toyotabacoor.com/part-inquiries">
+                        <div style="color:black;">Parts</div>
+                    
+                        </div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="https://www.toyotabacoor.com/financing">     
+                        <div style="color:black;">Financing</div>
+
+                        </div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="AboutPage.html">     
+                        <div style="color:black;">About us</div>
+                    </td>
+                    <td>
+                        <div class="HeaderTemplate">
+                        <a href="https://www.toyotabacoor.com/news-promos">
+                        <div style="color:black;">News and Promos</div>
+                        </div>
+                    </td>
+                 </tr>
+            </table>
+            </div>
+        </td>
+
+
+
+        <td>
+             <table>
+                <tr>
+                    <td> 
+                        <a href="https://www.youtube.com/channel/UCFHQBmC81zxqyLwf9Txo9kw?view_as=subscriber">
+                        <img src="https://static.wixstatic.com/media/a1b09fe8b7f04378a9fe076748ad4a6a.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a1b09fe8b7f04378a9fe076748ad4a6a.png" height="25px" width="25px">
+                    </td>
+
+                    <td>
+                        <a href="https://www.facebook.com/ToyotaBacoorOfficial">
+                        <img src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e316f544f9094143b9eac01f1f19e697.png" height="25px" width="25px">
+                    </td>
+
+                    <td>
+                        <a href="http://www.instagram.com/thetoyotabacoor">
+                        <img src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d6893330740455c96d218258a458aa4.png" height="25px" width="25px">
+                    </td>
+                </tr>
+             </table>
+        </td>
+    </tr>
+</table>
+</div>
+
+</header>
+
+<body>
+
+<div style="height: 350px; width:100%; position: relative;">
+     <div>
+          <video autoplay muted loop id="backgroundVideo">
+          <source src="Toyota Bacoor Dealership Philippines.mp4" type="video/mp4">
+          </video>
+     <div id="Cover"> </div>
+     </div>
+     <div class="ToyotaContent">
+          <h2>WELCOME TO</h2>
+          <h1 style="font-size:300%; line-height: 80%;">TOYOTA BACOOR</p></h1>
+
+     </div>
+</div>
+
+
+<div style="height: auto; width: 100%;" class="adjust">
+ <table> 
+    <tr>
+         <td class="ServiceImagePadding" style="padding-left: 75px">
+               <div class="ServiceImageStyle">
+                    <a href="https://www.toyotabacoor.com/service-appointment">
+                    <img style="object-fit: cover;" src="https://image.made-in-china.com/2f0j00DhbVqBJGwmCj/Blue-Hospital-Furniture-Airport-Waiting-Chair-3-Seat-Bench-Cheap-Waiting-Room-Blue-Chairs-for-Hospital-Office-Reception.jpg" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Book Appointment</div>
+               </div>
+               
+         </td>
+
+         <td class="ServiceImagePadding">
+                <div class="ServiceImageStyle">
+                    <a href="https://bit.ly/Toyota-Bacoor-Car-Inquiry-Form">
+                    <img style="object-fit: cover;" src="https://img.lovepik.com/photo/20211130/medium/lovepik-business-men-working-picture_501275884.jpg" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Get Car Quotation</div>
+               </div>
+         </td>
+
+         <td class="ServiceImagePadding">
+                <div class="ServiceImageStyle">
+                    <a href="ServicePage.html">
+                    <img style="object-fit: cover;" src="https://thumbs.dreamstime.com/b/young-girl-working-desk-office-portrait-writing-notes-laptop-91188833.jpg" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Get Service Quote</div>
+               </div>
+         </td>
+
+         <td class="ServiceImagePadding">
+                <div class="ServiceImageStyle">
+                    <a href="https://www.toyotabacoor.com/part-inquiries">
+                    <img style="object-fit: cover;" src="https://as1.ftcdn.net/v2/jpg/03/70/73/76/1000_F_370737630_in7aSg9okeKiBZMpWgDdXvNXH62I3HUb.jpg" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Inquire for Parts</div>
+               </div>
+         </td>
+
+         <td class="ServiceImagePadding">
+                <div class="ServiceImageStyle">
+                    <a href="https://www.toyotafinancial.ph/">
+                    <img style="object-fit: cover; position: absolute" src="https://th.bing.com/th/id/OIP.RV3BjwKDsMHCGi7wBKECmQHaE7?r=0&rs=1&pid=ImgDetMain" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Autoloan Calculator</div>
+               </div>
+         </td>
+
+         <td>
+                <div class="ServiceImageStyle">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScZafw8ni2Ubmzc4qkW_avZDKXzrrQhtGT_rxzKhaJwYbcNvQ/viewform?usp=send_form">
+                    <img style="object-fit: cover; position: absolute" src="https://th.bing.com/th/id/OIP.oTMGb7k-PIAFZP82B8D4QAHaDy?r=0&w=1024&h=524&rs=1&pid=ImgDetMain" height="100%" width="100%">
+                    <div class="ImagesTemplate"></div>
+                    <div class="ToyotaContent">Apply Loan Online</div>
+               </div>
+         </td>
+
+    </tr>
+ </table>
+</div>
+
+ <div style="text-align: center; font-size: 200%; padding-top: 2.5%;"><b>Vehicle Category</b></div>
+
+
+<div style="padding-left: 10%; padding-right: 10%;" class="adjust">
+    <table>
+        <tr>
+            <td class="ServiceImagePadding">
+                <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>Hatchback & Sedans
+                </div>
+            </td>
+
+            <td class="ServiceImagePadding">
+                <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>Crossovers & SUVs
+                </div>
+            </td>
+
+            <td class="ServiceImagePadding">
+                <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>MPVs
+                </div>
+            </td>
+
+            <td class="ServiceImagePadding">
+                <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>Vans & Pickups
+                </div>
+            </td>
+
+            <td class="ServiceImagePadding">
+                <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>Hybrid
+                </div>
+            </td>
+            <td class="ServiceImagePadding">
+                 <a href="https://www.toyotabacoor.com/vehicles">
+                <div class="Vehiclebutton" style="height: 50px; width: 190px;">
+                       <br>Gazoo Racing
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div id="VehicleSelection">
+
+    <table>
+        <tr>
+            <td>
+               <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/vios">
+                <div style="position:relative;">
+                      <img src ="https://s.car.info/image_files/1920/toyota-vios-front-side-0-512402.jpg" width="150px" height="100px">
+                      <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">VIOS</div>
+               </div>
+            </td>
+
+            <td>
+               <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/fortuner">
+                <div style="position:relative;">
+                      <img src ="https://images.hindustantimes.com/auto/img/2024/04/22/1600x900/Toyota_Fortuner_1713770811392_1713770821530.png" width="150px" height="100px">
+                      <div class="VehicleSelect"></div>
+                      </div>
+                <br> 
+                <div style="color:black">FORTUNER</div>
+               </div>
+            </td>
+            
+            <td>
+               <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/innova">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.bvjidZqI92FA0HNQHkRmRgHaEy?rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">INNOVA</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/corolla-cross">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.WIQaJ7JU_SW-miCpFtAcgwHaDl?w=1200&h=580&rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">COROLLA</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/corolla-altis">
+                <div style="position:relative;">
+                <img src ="https://images.cardekho.com/images/car-images/large/Toyota/Toyota-Corolla-Altis/champagne-mica-metallic.jpg" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">ALTIS</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/gr-supra">
+                <div style="position:relative;">
+                <img src ="https://tse1.mm.bing.net/th/id/OIP.23LYR3uv4MsAPsuLjibmNQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">GR SUPRA</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/rush">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.zggT5KeW22NMPjBlKEx9-AHaDX?rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">RUSH G-RS</div>
+               </div>
+            </td>
+             <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/hilux">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.XCf_O0e5twCGXeYkIB0XdgHaEo?rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">HILUX</div>
+               </div>
+            </td>
+             <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/avanza">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.IXor97TnHFQespaZH0uF9gHaEK?rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">AVANZA</div>
+               </div>
+            </td>
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/alphard">
+                <div style="position:relative;">
+                <img src ="https://cdn.idntimes.com/content-images/community/2024/03/1-platinum-white-pearl-96220320ab1516616da2417addf769e4-51925947913223753dfd7c0604b810aa_600x400.png" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">ALPHARD</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/hiace-commuter">
+                <div style="position:relative;">
+                <img src ="https://th.bing.com/th/id/OIP.qx5bUB-qvWKXMB5ODDfnNAHaD_?w=700&h=378&rs=1&pid=ImgDetMain" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">HIACE...</div>
+               </div>
+            </td>
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/rav4-hev">
+                <div style="position:relative;">
+                <img src ="https://static.wixstatic.com/media/873634_3618bd306c854474a0701703f6613a96~mv2.jpg/v1/fill/w_625,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/873634_3618bd306c854474a0701703f6613a96~mv2.jpg" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">RAV4</div>
+               </div>
+            </td>
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/rav4-hev">
+                <div style="position:relative;">
+                <img src ="https://static.wixstatic.com/media/873634_3618bd306c854474a0701703f6613a96~mv2.jpg/v1/fill/w_625,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/873634_3618bd306c854474a0701703f6613a96~mv2.jpg" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">RAV4</div>
+               </div>
+            </td>
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/gr-86">
+                <div style="position:relative;">
+                <img src ="https://cf.autodeft2.pw/content/20230904/toyota-gr-86-aimgain-002-ngKvhA.jpg" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">GR 86</div>
+               </div>
+            </td>
+
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/land-cruiser">
+                <div style="position:relative;">
+                <img src ="https://static.wixstatic.com/media/873634_c33fe97f04d649f4a27a6c8fda3af84b~mv2.png/v1/fill/w_625,h_416,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/873634_c33fe97f04d649f4a27a6c8fda3af84b~mv2.png" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">LAND CRUISER</div>
+               </div>
+            </td>
+            <td>
+                 <div class="VehicleSelectionTemplate">
+                <a href="https://www.toyotabacoor.com/product-page/camry">
+                <div style="position:relative;">
+                <img src ="https://static.wixstatic.com/media/34ad47_e498ecb0d0674e05b61fdc787d148c05~mv2.jpg/v1/fill/w_625,h_416,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/34ad47_e498ecb0d0674e05b61fdc787d148c05~mv2.jpg" width="150px" height="100px">
+                <div class="VehicleSelect"></div>
+                </div>
+                <br>
+                <div style="color:black">CAMRY</div>
+               </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+
+</body>
+
+<footer>
+
+<!--CONTACT FOOTER-->
+    <div style="background-color: lightgray; width: auto; height: auto; position: relative;" class="adjust">
+        <div style="padding-left: 14.5%;">
+                <table>
+                    <tr>
+                        <td>
+                             Connect With Us
+                        </td>
+
+                        <td style="padding-left: 305%;">
+                            <a href="https://www.youtube.com/channel/UCFHQBmC81zxqyLwf9Txo9kw?view_as=subscriber">
+                            <img src="https://static.wixstatic.com/media/a1b09fe8b7f04378a9fe076748ad4a6a.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/a1b09fe8b7f04378a9fe076748ad4a6a.png" height="25px" width="25px">
+                        </td> 
+
+                        <td style="padding-left:305%;">
+                           <a href="https://www.facebook.com/ToyotaBacoorOfficial">
+                           <img src="https://static.wixstatic.com/media/e316f544f9094143b9eac01f1f19e697.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/e316f544f9094143b9eac01f1f19e697.png" height="25px" width="25px">
+                        </td>
+
+                        <td style="padding-left: 305%;">
+                          <a href="http://www.instagram.com/thetoyotabacoor">
+                          <img src="https://static.wixstatic.com/media/8d6893330740455c96d218258a458aa4.png/v1/fill/w_54,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8d6893330740455c96d218258a458aa4.png" height="25px" width="25px">
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    
+  
+        <hr style="width:90%;">
+
+        <div style="padding-left: 30vh;">
+
+            <table>
+                <tr>
+                
+                    <td class="footerContent">Inventory</td>
+                    <td class="footerContent">About</td>
+                    <td class="footerContent">More</td>
+                    <td style="padding-left: 10vh;">Bacoor Boulevard, Mambog IV, Bacoor, Cavite</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/vehicles">All Toyota Vehicles</td>
+                    <td class="footerContent"><a href="AboutPage.html">About us</td>
+                    <td class="footerContent"><a href="https://www.toyotabacoor.com/privacy-policy">Privacy Policy</td>
+                </tr>
+
+                <tr>
+                   <td class="footerContent">Sedan & Hatchback</td>
+                   <td class="footerContent"><a href="https://www.toyotabacoor.com/mps">Registered Marketing Professional</td>
+                   <td class="footerContent"><a href="https://www.toyotabacoor.com/about-4">Payment Policy</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent">Crossover & SUV</td>
+                    <td class="footerContent"><a href="https://www.toyotabacoor.com/tsure">TSURE Registered MPS</td>
+                    <td class="footerContent"><a href="https://www.toyotabacoor.com/contact">Contact Us</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent">MPV</td>
+                    <td class="footerContent"><a href="https://www.toyotabacoor.com/ise">Authorized Insurance Sales Executive</td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/marketing-materials">Marketing Materials</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent">Van & Pickup</td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/careers">Careers</td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/about-4-1">Environmental Policy</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent">Hybrid</td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/csr">CSR</td>
+                </tr>
+
+                <tr>
+                    <td class="footerContent"> <a href="HomePage.html">Performance</td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/code-of-conduct">Code of Conduct</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td class="footerContent"> <a href="https://www.toyotabacoor.com/news-promos">News and Promos</td>
+                </tr>
+            </table>
+        </div>
+
+    <div style=" color: gray; font-size: 2vh; text-align: center; top: 100%; width: 100%; height: auto; padding-top:3vh;">
+   Copyright © TOYOTA BACOOR INC. All Rights Reserved 2020 - Designed by Kevin
+    </div>
+
+    </div>
+    
+
+</footer>
+
+
+
+</html>
